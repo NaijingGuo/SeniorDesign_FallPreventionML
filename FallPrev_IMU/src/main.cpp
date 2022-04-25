@@ -35,9 +35,9 @@ void loop() {
   degreesY = map(y, -100, 97, -90, 90);
   degreesZ = map(z, -100, 97, -90, 90);
   Serial.print(degreesX);
-  Serial.print("\t");
+  Serial.print(";");
   Serial.print(degreesY);
-  Serial.print("\t");
+  Serial.print(";");
   Serial.print(degreesZ);
   Serial.print("\n");
   
