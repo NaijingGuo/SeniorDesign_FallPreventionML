@@ -95,9 +95,9 @@ file_name = "raw_data/IMU_trial1_JA_no_fall.xlsx"
 temp = read_no_fall(file_name)
 data = data + temp
 
-file_name = "raw_data/IMU_trial2_JA_no_fall.xlsx"
-temp = read_no_fall(file_name)
-data = data + temp
+# file_name = "raw_data/IMU_trial2_JA_no_fall.xlsx"
+# temp = read_no_fall(file_name)
+# data = data + temp
 
 file_name = "raw_data/IMU_trial3_JA_fall.xlsx"
 temp = read_no_fall(file_name)
@@ -143,6 +143,17 @@ temp = read_no_fall(file_name)
 fall(temp, 9, 15)
 data = data + temp
 
+file_name = "raw_data/IMU_trial1_no_fall.xlsx"
+temp = read_no_fall(file_name)
+data = data + temp
+
+file_name = "raw_data/IMU_trial2_no_fall.xlsx"
+temp = read_no_fall(file_name)
+data = data + temp
+
+file_name = "raw_data/IMU_trial3_no_fall.xlsx"
+temp = read_no_fall(file_name)
+data = data + temp
 
 ## convert to df after reading all data
 df = pd.DataFrame(data)
